@@ -1,0 +1,29 @@
+﻿@model FinalProjectJob.Models.ViewModels.HomeIndexViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Job Finder &mdash; Colorlib Website Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   @Html.Partial("Links")
+
+</head>
+<body>
+
+    <div class="site-wrap">
+        @Html.Partial("Header")
+
+        @Html.Partial("MainHome", Model)
+
+        @Html.Partial("Footer")
+
+
+
+    </div>
+    @Html.Partial("Scripts")
+</body>
+</html>

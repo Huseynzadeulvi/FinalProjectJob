@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="jobsModelStoreContainer" CdmEntityContainer="jobsEntities">
+    <EntitySetMapping Name="vakansiyalars">
+      <EntityTypeMapping TypeName="jobsModel.vakansiyalar">
+        <MappingFragment StoreEntitySet="vakansiyalar">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="vakToCategory" ColumnName="vakToCategory" />
+          <ScalarProperty Name="vakHaqqinda" ColumnName="vakHaqqinda" />
+          <ScalarProperty Name="vakDate" ColumnName="vakDate" />
+          <ScalarProperty Name="VakMaas" ColumnName="VakMaas" />
+          <ScalarProperty Name="vakSirket" ColumnName="vakSirket" />
+          <ScalarProperty Name="vakSeher" ColumnName="vakSeher" />
+          <ScalarProperty Name="vakAd" ColumnName="vakAd" />
+          <ScalarProperty Name="vakId" ColumnName="vakId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="categories">
+      <EntityTypeMapping TypeName="jobsModel.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="categoryIcon" ColumnName="categoryIcon" />
+          <ScalarProperty Name="categoryName" ColumnName="categoryName" />
+          <ScalarProperty Name="categoryId" ColumnName="categoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="elans">
+      <EntityTypeMapping TypeName="jobsModel.elan">
+        <MappingFragment StoreEntitySet="elan">
+          <ScalarProperty Name="JobTypeId" ColumnName="JobTypeId" />
+          <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobTypes">
+      <EntityTypeMapping TypeName="jobsModel.JobType">
+        <MappingFragment StoreEntitySet="JobType">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

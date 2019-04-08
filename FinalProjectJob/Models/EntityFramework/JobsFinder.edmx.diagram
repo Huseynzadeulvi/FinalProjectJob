@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="698ccf196b08436884f3b273ac6a828c" Name="Diagram1">
+        <EntityTypeShape EntityType="jobsModel.vakansiyalar" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="jobsModel.category" Width="1.5" PointX="1" PointY="1.625" />
+        <EntityTypeShape EntityType="jobsModel.elan" Width="1.5" PointX="3" PointY="5" />
+        <EntityTypeShape EntityType="jobsModel.JobType" Width="1.5" PointX="0.75" PointY="5.375" />
+        <AssociationConnector Association="jobsModel.FK__elan__JobTypeId__38996AB5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

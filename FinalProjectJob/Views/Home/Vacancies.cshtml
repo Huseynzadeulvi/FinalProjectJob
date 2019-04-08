@@ -1,0 +1,32 @@
+﻿@model FinalProjectJob.Models.EntityFramework.vakansiyalar
+    @{
+        Layout = null;
+    }
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        @Html.Partial("Links")
+        <title>Vacancies</title>
+    </head>
+    <body>
+        @Html.Partial("Header")
+        <div class="card">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@Model.vakAd</h5>
+                <p class="card-text">@Model.vakHaqqinda</p>
+                <p class="card-text">$@Model.VakMaas</p>
+                <p class="card-text">@Model.vakSeher</p>
+                <p class="card-text">@Model.vakSirket</p>
+                <p class="card-text">@Model.vakDate</p>
+            </div>
+        </div>
+        @Html.Partial("Footer")
+        @Html.Partial("Scripts")
+    </body>
+</html>
